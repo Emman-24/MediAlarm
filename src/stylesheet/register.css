@@ -1,0 +1,22 @@
+
+
+.mainFxmlClass {
+  -fx-background-color: #2F2B42;
+    
+}
+
+.textField{
+    -fx-background-color: #4E4B5E;
+    -fx-text-fill: white;
+    -fx-prompt-text-fill:white;
+}
+.textField{
+    -fx-border-radius:15px;
+}
+
+.btn{
+    -fx-background-radius: 24px;
+}
+.textField{
+    -fx-background-radius: 24px;
+}

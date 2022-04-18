@@ -1,26 +1,136 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
+
 package controller;
 
+import cripto.hash;
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
+import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
+import javafx.scene.control.Alert;
+import javafx.scene.control.Button;
+import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
+import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.stage.Stage;
+import model.ConsultUser;
 
-/**
- * FXML Controller class
- *
- * @author emman
- */
-public class MainViewController implements Initializable {
 
-    /**
-     * Initializes the controller class.
-     */
+
+public class MainViewController implements Initializable  {
+
+    
+    
+    @FXML
+    private Button logginButton;
+    
+    @FXML
+    private Label ForgotPassLabel;
+   
+    @FXML
+    private AnchorPane AnchorPane;
+
+    @FXML
+    private PasswordField passwordField;
+
+    @FXML
+    private Button registerButton;
+
+    @FXML
+    private TextField emailTextField;
+    
+    
+    @FXML
+    private void onLoginButtonClick(ActionEvent event) throws IOException{
+        
+         String email = emailTextField.getText();
+         String pass = passwordField.getText();
+            
+         ConsultUser con = new ConsultUser();
+        
+         String passwordEncode = hash.encryptThisString(pass);
+
+         String validate = con.login(email, passwordEncode);
+        
+       
+       if(validate != null){
+           
+        String fullname =con.searchFullName(validate);
+           
+          
+            Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+            alert.setHeaderText(null);
+            alert.setTitle("Login exitoso");
+            alert.setContentText("Bienvenido "+fullname);
+            alert.showAndWait();
+            
+            
+            
+             logginButton.getScene().getWindow().hide();
+                
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Menu.fxml"));
+                Parent root = (Parent) loader.load();           
+                MenuController secController = loader.getController();
+                secController.onGetData(fullname, validate);     
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.setTitle("MediAlarm");
+                stage.show();
+         
+         
+        
+       }else if( validate == null){
+            
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText(null);
+            alert.setTitle("Error en login ");
+            alert.setContentText("Correo y/o contraseña son incorrectos");
+            alert.showAndWait();
+           
+           
+       }
+       
+    }
+    
+   @FXML
+    private void onRegisterButton(ActionEvent event) throws IOException{
+        logginButton.getScene().getWindow().hide();
+        
+    Parent root = FXMLLoader.load(getClass().getResource("/view/Register.fxml"));     
+           Scene scene = new Scene(root);     
+           Stage stage = new Stage();     
+           stage.setScene(scene);       
+           stage.setTitle("MediAlarm"); 
+           stage.show();
+    
+    }
+    
+    @FXML
+    private void OnForgotPassword() throws IOException{
+    
+    AnchorPane .getScene().getWindow().hide();
+    
+    Parent root = FXMLLoader.load(getClass().getResource("/view/PasswordRecovery.fxml"));     
+           Scene scene = new Scene(root);     
+           Stage stage = new Stage();     
+           stage.setScene(scene);       
+           stage.setTitle("MediAlarm"); 
+           stage.show();
+    
+    }
+    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-        // TODO
+             
     }    
     
+    
+    
+ 
+  
 }
