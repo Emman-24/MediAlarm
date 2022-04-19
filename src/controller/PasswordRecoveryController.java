@@ -57,8 +57,8 @@ public class PasswordRecoveryController implements Initializable {
                     Random rand = new Random();
                     radomCode = rand.nextInt(99999);
                     String host = "smtp.gmail.com";
-                    String user = "je.serna24@ciaf.edu.co";
-                    String pass = "1004686398";
+                    String user = "";
+                    String pass = "";
                     String to = email;
                     String subject = "Reseting code";
                     String message = "Your reset code is "+radomCode;
