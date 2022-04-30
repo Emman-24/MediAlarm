@@ -1,11 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6485a65-6422-48ed-96db-0d5a9e2ac734" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
+    <list default="true" id="a6485a65-6422-48ed-96db-0d5a9e2ac734" name="Changes" comment="Modulo de usuario terminado :&#10;Faltas a realizar:&#10;-En el modulo de registro añadir la restriccion de un correo electronico, al igual que la respectiva restriccion del nombre y el apellido">
+      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/PasswordRecoveryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/PasswordRecoveryController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/RegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/model/User_Seguity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/model/User_Seguity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/view/Menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/view/Menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/controller/MainViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/controller/MainViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/medialarm/MediAlarm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/medialarm/MediAlarm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/view/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/view/MainView.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/MainViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MainViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/medialarm/MediAlarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/medialarm/MediAlarm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/PasswordRecoveryController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/PasswordRecoveryController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/User_Seguity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User_Seguity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Menu.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -26,7 +43,12 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true"
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "last_opened_file_path": "C:/Users/emman/OneDrive/Escritorio/SceneBuilder.lnk",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "settings.editor.selected.configurable": "preferences.pluginManager"
   }
 }]]></component>
   <component name="RunManager">
@@ -63,6 +85,14 @@
       <workItem from="1648057888718" duration="541000" />
       <workItem from="1648058438024" duration="561000" />
     </task>
+    <task id="LOCAL-00001" summary="Modulo de usuario terminado :&#10;Faltas a realizar:&#10;-En el modulo de registro añadir la restriccion de un correo electronico, al igual que la respectiva restriccion del nombre y el apellido">
+      <created>1650321803749</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1650321803749</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,5 +108,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Modulo de usuario terminado :&#10;Faltas a realizar:&#10;-En el modulo de registro añadir la restriccion de un correo electronico, al igual que la respectiva restriccion del nombre y el apellido" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modulo de usuario terminado :&#10;Faltas a realizar:&#10;-En el modulo de registro añadir la restriccion de un correo electronico, al igual que la respectiva restriccion del nombre y el apellido" />
   </component>
 </project>

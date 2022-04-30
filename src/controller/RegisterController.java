@@ -2,7 +2,6 @@
 package controller;
 
 import cripto.hash;
-import java.awt.event.KeyEvent;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;

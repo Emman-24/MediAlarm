@@ -8,7 +8,7 @@
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="560.0" prefWidth="860.0" style="-fx-background-color: #2F2B42;" styleClass="mainFxmlClass" stylesheets="file:/C:/Users/emman/OneDrive/Documentos/NetBeansProjects/MediAlarm/src/stylesheet/menu.css" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
+<AnchorPane id="AnchorPane" fx:id="AnchorPane" prefHeight="560.0" prefWidth="860.0" style="-fx-background-color: #2F2B42;" styleClass="mainFxmlClass" stylesheets="file:/C:/Users/emman/OneDrive/Documentos/NetBeansProjects/MediAlarm/src/stylesheet/menu.css" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MenuController">
    <children>
       <Pane layoutY="1.0" prefHeight="560.0" prefWidth="311.0" style="-fx-background-color: #393251;">
          <children>
@@ -38,5 +38,9 @@
          </children>
       </Pane>
       <Pane layoutX="285.0" layoutY="-128.0" prefHeight="234.0" prefWidth="432.0" rotate="40.0" style="-fx-background-color: #FC2A52; -fx-background-radius: 81 22;" />
+      <Button layoutX="404.0" layoutY="184.0" mnemonicParsing="false" onAction="#OnCalendarButton" text="Calendario" />
+      <Button layoutX="690.0" layoutY="184.0" mnemonicParsing="false" onAction="#OnMussicButton" text="Musica" />
+      <Button layoutX="550.0" layoutY="381.0" mnemonicParsing="false" onAction="#OnNewsButton" text="Noticias" />
+      <Label fx:id="UserId" prefHeight="17.0" prefWidth="73.0" textFill="WHITE" />
    </children>
 </AnchorPane>

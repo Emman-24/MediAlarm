@@ -7,7 +7,7 @@ public class User_Seguity {
     private String email;
     private String password;
 
-    public User_Seguity( String user_id,  String password, String email) {
+    public User_Seguity( String user_id,String email,String password) {
         this.user_id = user_id;
         this.email = email;
         this.password = password;

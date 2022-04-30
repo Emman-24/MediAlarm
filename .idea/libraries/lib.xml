@@ -9,6 +9,10 @@
       <root url="jar://$PROJECT_DIR$/dist/lib/javafx.controls.jar!/" />
       <root url="jar://$PROJECT_DIR$/dist/lib/javafx.graphics.jar!/" />
       <root url="jar://$PROJECT_DIR$/dist/lib/javafx-swt.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/conectors/javax.mail.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/conectors/com.sun.net.ssl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/conectors/mysql-connector-java-8.0.28.jar!/" />
+      <root url="jar://$PROJECT_DIR$/src/conectors/activation.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

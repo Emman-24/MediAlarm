@@ -71,7 +71,7 @@ public class MainViewController implements Initializable  {
             
             
             
-             logginButton.getScene().getWindow().hide();
+                logginButton.getScene().getWindow().hide();
                 
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Menu.fxml"));
                 Parent root = (Parent) loader.load();           
