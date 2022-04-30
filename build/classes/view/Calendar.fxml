@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="560.0" prefWidth="860.0" style="-fx-background-color: #2F2B42;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CalendarController">
+   <left>
+      <Pane prefHeight="560.0" prefWidth="311.0" style="-fx-background-color: #393251;" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="34.88" fitWidth="34.88" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" x="17.0" y="60.56">
+               <image>
+                  <Image url="@../image/icon-user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="NameUser" layoutX="93.0" layoutY="84.0" prefHeight="17.0" prefWidth="176.0" textFill="WHITE">
+               <font>
+                  <Font name="Open Sans" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane prefHeight="560.0" prefWidth="550.0" BorderPane.alignment="CENTER">
+         <children>
+            <Circle fx:id="circle" fill="#707070" layoutX="270.0" layoutY="192.0" radius="61.0" stroke="BLACK" strokeType="INSIDE" />
+            <Label fx:id="text1" alignment="CENTER" layoutX="167.0" layoutY="264.0" prefHeight="69.0" prefWidth="198.0" text="Controlar el horario de sus medicamentos" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Button fx:id="AddMedicineFirst" layoutX="115.0" layoutY="345.0" mnemonicParsing="false" prefHeight="51.0" prefWidth="330.0" style="-fx-background-color: #524A7B; -fx-background-radius: 22;" text="Añadir una medicina" textFill="WHITE">
+               <font>
+                  <Font name="Open Sans" size="15.0" />
+               </font>
+            </Button>
+            <ScrollPane fx:id="Scroll" layoutX="2.0" prefHeight="535.0" prefWidth="550.0" style="-fx-background-color: #2F2B42;">
+               <content>
+                  <GridPane fx:id="postGrid" alignment="CENTER_LEFT" prefHeight="85.0" prefWidth="0.0" style="-fx-background-color: #2F2B42;">
+                     <rowConstraints>
+                        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                     </rowConstraints>
+                  </GridPane>
+               </content>
+            </ScrollPane>
+            <Button fx:id="addMedicineButton" alignment="CENTER" contentDisplay="BOTTOM" layoutX="454.0" layoutY="485.0" mnemonicParsing="false" onMouseClicked="#OnClickAddMedicineButton" prefHeight="53.0" prefWidth="71.0" style="-fx-background-radius: 50; -fx-background-color: #524A7B;" text="+" textFill="WHITE">
+               <font>
+                  <Font size="35.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </center>
+</BorderPane>
