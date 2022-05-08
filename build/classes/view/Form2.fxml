@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="Vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="569.0" style="-fx-background-color: #2F2B42;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Form2Controller">
+   <children>
+      <Pane prefHeight="174.0" prefWidth="569.0" style="-fx-background-color: #FC2A52; -fx-background-radius: 50;">
+         <children>
+            <Label layoutX="220.0" layoutY="14.0" text="Añadir Medicación" textFill="WHITE">
+               <font>
+                  <Font name="Open Sans" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="163.0" layoutY="76.0" text="¿En qué forma es el medicamento?" textFill="WHITE">
+               <font>
+                  <Font name="Open Sans" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Pane prefHeight="399.0" prefWidth="569.0" style="-fx-background-color: #2F2B42;">
+         <children>
+            <Button layoutX="119.0" layoutY="308.0" mnemonicParsing="false" onAction="#OnNextForm" prefHeight="51.0" prefWidth="330.0" style="-fx-background-color: #524A7B; -fx-background-radius: 30;" text="Proximo" textFill="WHITE">
+               <font>
+                  <Font name="Open Sans" size="15.0" />
+               </font>
+            </Button>
+            <ListView fx:id="ListView" editable="true" layoutX="53.0" layoutY="31.0" prefHeight="265.0" prefWidth="501.0" styleClass="list-cell" stylesheets="@../stylesheet/Form2.css" />
+            <Label fx:id="IdUser" layoutX="47.0" layoutY="359.0" prefHeight="17.0" prefWidth="0.0" textFill="WHITE" visible="false" />
+            <Label fx:id="MedicinesName" layoutX="86.0" layoutY="359.0" prefHeight="17.0" prefWidth="0.0" textFill="WHITE" visible="false" />
+         </children>
+      </Pane>
+   </children>
+</VBox>

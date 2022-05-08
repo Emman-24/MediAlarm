@@ -26,6 +26,16 @@
                   <Font name="Open Sans" size="15.0" />
                </font>
             </Label>
+            <Label fx:id="IdUser" layoutX="34.0" layoutY="211.0" prefHeight="17.0" prefWidth="47.0" textFill="WHITE" visible="false" />
+            <Button layoutX="22.0" layoutY="492.0" mnemonicParsing="false" onAction="#onBackButton" prefHeight="36.0" prefWidth="61.0" style="-fx-background-color: #393251;">
+               <graphic>
+                  <ImageView fitHeight="34.0" fitWidth="85.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/row.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+            </Button>
          </children>
       </Pane>
    </left>
@@ -52,7 +62,7 @@
                   </GridPane>
                </content>
             </ScrollPane>
-            <Button fx:id="addMedicineButton" alignment="CENTER" contentDisplay="BOTTOM" layoutX="454.0" layoutY="485.0" mnemonicParsing="false" onMouseClicked="#OnClickAddMedicineButton" prefHeight="53.0" prefWidth="71.0" style="-fx-background-radius: 50; -fx-background-color: #524A7B;" text="+" textFill="WHITE">
+            <Button fx:id="addMedicineButton" alignment="CENTER" contentDisplay="BOTTOM" layoutX="454.0" layoutY="492.0" mnemonicParsing="false" onAction="#OnClickAddMedicineButton" prefHeight="74.0" prefWidth="71.0" style="-fx-background-radius: 40; -fx-background-color: #524A7B;" text="+" textFill="WHITE">
                <font>
                   <Font size="35.0" />
                </font>

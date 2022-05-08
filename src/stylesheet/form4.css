@@ -1,0 +1,19 @@
+.choice-box {
+  -fx-background-color: #272338;
+  -fx-mark-color:  #FC2A52; 
+   -fx-font-family: "Open Sans";
+   -fx-font-size: 15px;
+    
+}
+.choice-box > .label { -fx-text-fill: white;
+ -fx-font-size: 18px;
+}
+
+
+.choice-box .context-menu { -fx-background-color: #272338; }
+
+.choice-box .menu-item:focused { -fx-background-color: #FC2A52; }
+
+.choice-box .menu-item > .label { -fx-text-fill: white;}
+
+.choice-box .menu-item:focused > .label { -fx-text-fill: black; }

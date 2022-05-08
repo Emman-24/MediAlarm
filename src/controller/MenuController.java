@@ -20,6 +20,8 @@ import javafx.stage.Stage;
 
 public class MenuController implements Initializable {
    
+    private static String myVariable;
+  
     @FXML
     private Label nameUserLabel;
     
@@ -63,6 +65,8 @@ public class MenuController implements Initializable {
                 
                 AnchorPane.getScene().getWindow().hide();
                 
+                setMyVariable(IdUser);
+                
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Calendar.fxml"));
                 Parent root = (Parent) loader.load();           
                 CalendarController secController = loader.getController();
@@ -71,8 +75,6 @@ public class MenuController implements Initializable {
                 stage.setScene(new Scene(root));
                 stage.setTitle("MediAlarm");
                 stage.show();
-
-        
 
     }
     
@@ -112,5 +114,13 @@ public class MenuController implements Initializable {
         this.UserId.setText(id);
 
     }    
+    
+     public static String getMyVariable() {
+        return myVariable;
+    }
+
+    public static void setMyVariable(String myVariable) {
+        MenuController.myVariable = myVariable;
+    }
     
 }

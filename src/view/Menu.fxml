@@ -38,9 +38,31 @@
          </children>
       </Pane>
       <Pane layoutX="285.0" layoutY="-128.0" prefHeight="234.0" prefWidth="432.0" rotate="40.0" style="-fx-background-color: #FC2A52; -fx-background-radius: 81 22;" />
-      <Button layoutX="404.0" layoutY="184.0" mnemonicParsing="false" onAction="#OnCalendarButton" text="Calendario" />
-      <Button layoutX="690.0" layoutY="184.0" mnemonicParsing="false" onAction="#OnMussicButton" text="Musica" />
-      <Button layoutX="550.0" layoutY="381.0" mnemonicParsing="false" onAction="#OnNewsButton" text="Noticias" />
-      <Label fx:id="UserId" prefHeight="17.0" prefWidth="73.0" textFill="WHITE" />
+      <Button contentDisplay="TOP" layoutX="382.0" layoutY="176.0" mnemonicParsing="false" onAction="#OnCalendarButton" prefHeight="118.0" prefWidth="159.0" styleClass="button2" stylesheets="@../stylesheet/menu.css" text="Calendario" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="77.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/elipse1.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+      <Button contentDisplay="TOP" layoutX="667.0" layoutY="176.0" mnemonicParsing="false" onAction="#OnMussicButton" prefHeight="118.0" prefWidth="149.0" styleClass="button2" stylesheets="@../stylesheet/menu.css" text="Musica" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="77.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/elipse2.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Button contentDisplay="TOP" layoutX="517.0" layoutY="361.0" mnemonicParsing="false" onAction="#OnNewsButton" prefHeight="133.0" prefWidth="149.0" styleClass="button2" stylesheets="@../stylesheet/menu.css" text="Noticias" textFill="WHITE">
+         <graphic>
+            <ImageView fitHeight="77.0" fitWidth="78.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/elipse3.png" />
+               </image>
+            </ImageView>
+         </graphic></Button>
+      <Label fx:id="UserId" prefHeight="17.0" prefWidth="73.0" textFill="WHITE" visible="false" />
    </children>
 </AnchorPane>

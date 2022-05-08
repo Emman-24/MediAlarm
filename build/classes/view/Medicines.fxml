@@ -20,7 +20,7 @@
             </Label>
          </children>
       </HBox>
-      <Pane prefHeight="105.0" prefWidth="481.0" style="-fx-background-color: #A9A8B1; -fx-background-radius: 30;">
+      <Pane onMouseClicked="#OnMedicineClick" prefHeight="105.0" prefWidth="481.0" style="-fx-background-color: #A9A8B1; -fx-background-radius: 30;">
          <children>
             <ImageView fx:id="PostImageSrc" fitHeight="18.0" fitWidth="47.0" layoutX="49.0" layoutY="34.0" pickOnBounds="true" preserveRatio="true">
                <image>
@@ -37,11 +37,12 @@
                   <Label fx:id="Cantidad" layoutX="23.0" layoutY="52.0" text="100" textFill="WHITE" />
                   <Label layoutX="92.0" layoutY="52.0" text="Tomar " textFill="WHITE" />
                   <Label fx:id="NumeroPastillas" layoutX="137.0" layoutY="52.0" text="1 " textFill="WHITE" />
-                  <Label layoutX="147.0" layoutY="52.0" text="Pastilla(s)" textFill="WHITE" />
+                  <Label fx:id="FormaMedi" layoutX="147.0" layoutY="52.0" text="Pastilla(s)" textFill="WHITE" />
                   <Label fx:id="MedidaCantida" layoutX="49.0" layoutY="52.0" text="mcg" textFill="WHITE" />
                </children>
             </Pane>
             <Line endX="-5.0" endY="32.0" layoutX="134.0" layoutY="34.0" startX="-5.0" startY="-17.0" stroke="#707070" />
+            <Label fx:id="IdMedicine" layoutX="437.0" layoutY="38.0" prefHeight="17.0" prefWidth="23.0" />
          </children>
       </Pane>
    </children>

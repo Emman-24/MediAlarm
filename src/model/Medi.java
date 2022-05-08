@@ -3,12 +3,33 @@ package model;
 
 
 public class Medi {
+    
+    private int idMedi;
+    private String idUserMedi;
     private String NombreMedicamento;
+    private String FormaMedi;
     private String Cantidad;
     private String MedidaCantida;
     private String NumeroPastillas;
     private String PostImageSrc;
     private String Hora;
+    private String VencimientoMedi;
+
+    public Medi(String idUserMedi, String NombreMedicamento, String FormaMedi, String Cantidad, String MedidaCantida, String NumeroPastillas, String PostImageSrc, String Hora, String VencimientoMedi) {
+        this.idUserMedi = idUserMedi;
+        this.NombreMedicamento = NombreMedicamento;
+        this.FormaMedi = FormaMedi;
+        this.Cantidad = Cantidad;
+        this.MedidaCantida = MedidaCantida;
+        this.NumeroPastillas = NumeroPastillas;
+        this.PostImageSrc = PostImageSrc;
+        this.Hora = Hora;
+        this.VencimientoMedi = VencimientoMedi;
+    }
+ 
+    public Medi(){
+    
+    }
 
     public String getNombreMedicamento() {
         return NombreMedicamento;
@@ -57,6 +78,38 @@ public class Medi {
 
     public void setPostImageSrc(String PostImageSrc) {
         this.PostImageSrc = PostImageSrc;
+    }
+    
+     public String getFormaMedi() {
+        return FormaMedi;
+    }
+
+    public void setFormaMedi(String FormaMedi) {
+        this.FormaMedi = FormaMedi;
+    }
+
+    public String getIdUserMedi() {
+        return idUserMedi;
+    }
+
+    public void setIdUserMedi(String idUserMedi) {
+        this.idUserMedi = idUserMedi;
+    }
+
+    public String getVencimientoMedi() {
+        return VencimientoMedi;
+    }
+
+    public void setVencimientoMedi(String VencimientoMedi) {
+        this.VencimientoMedi = VencimientoMedi;
+    }
+
+    public int getIdMedi() {
+        return idMedi;
+    }
+
+    public void setIdMedi(int idMedi) {
+        this.idMedi = idMedi;
     }
     
     

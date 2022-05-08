@@ -1,14 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
-<?import java.net.*?>
-<?import java.util.*?>
-<?import javafx.scene.*?>
-<?import javafx.scene.control.*?>
-<?import javafx.scene.layout.*?>
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
 
-<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.NewsController">
+<AnchorPane id="AnchorPane" prefHeight="560.0" prefWidth="860.0" style="-fx-background-color: #2F2B42;" styleClass="mainFxmlClass" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="controller.NewsController">
     <stylesheets>
-        <URL value="@/stylesheet/news.css"/>
+        <URL value="@/stylesheet/news.css" />
     </stylesheets>
+   <children>
+      <Pane layoutX="24.0" layoutY="24.0" prefHeight="80.0" prefWidth="309.0" style="-fx-background-color: #FC2A52; -fx-background-radius: 30;">
+         <children>
+            <ImageView fitHeight="34.88" fitWidth="34.88" layoutX="34.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/icon-user.png" />
+               </image>
+            </ImageView>
+            <Label alignment="CENTER" layoutX="69.0" layoutY="32.0" prefHeight="21.0" prefWidth="219.0" text="Emmanuel Serna Yanes" textFill="WHITE">
+               <font>
+                  <Font name="Open Sans" size="15.0" />
+               </font>
+            </Label>
+         </children>
+      </Pane>
+      <Button layoutX="14.0" layoutY="508.0" mnemonicParsing="false" prefHeight="29.44" prefWidth="29.44" style="-fx-background-color: #2F2B42;">
+         <graphic>
+            <ImageView fitHeight="29.44" fitWidth="29.44" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/row.png" />
+               </image>
+            </ImageView>
+         </graphic>
+      </Button>
+   </children>
 </AnchorPane>
