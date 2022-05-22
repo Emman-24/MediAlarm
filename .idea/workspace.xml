@@ -4,27 +4,86 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6485a65-6422-48ed-96db-0d5a9e2ac734" name="Changes" comment="Modulo agregar medicamento completado :&#10;Falta realizar el refresh del calendario.&#10;Se añadio estilos css a los formularios 1,2,3,4 y 5&quot;.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/controller/CalendarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/CalendarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/controller/MainViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MainViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/controller/MedicinesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MedicinesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/controller/MusicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MusicController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/model/ConsultMedi.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/model/ConsultMedi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/view/Medicines.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/view/Medicines.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/view/Music.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/view/Music.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/CalendarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CalendarController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MainViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MainViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MedicinesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MedicinesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MusicController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/ConsultMedi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ConsultMedi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Medicines.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Medicines.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Music.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Music.fxml" afterDir="false" />
+    <list default="true" id="a6485a65-6422-48ed-96db-0d5a9e2ac734" name="Changes" comment="Modulo musica completado :&#10;Falta realizar mejoras en el diseño de los botones .">
+      <change afterPath="$PROJECT_DIR$/build/classes/Interface/MyListener.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/controller/HealthPromotionsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/controller/InformationController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/controller/Item2Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/controller/ItemController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/controller/MusicController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/controller/MusicController$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/controller/Page1Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/controller/Page2Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/controller/Page3Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/controller/Page4Controller.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/image/album.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/image/gotero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/image/inhalador.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/image/inyeccion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/image/solucion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/img/another.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/img/gorillaz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/img/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/img/plastic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/model/ConsultMusic.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/model/ConsultNews.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/model/Music.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/model/News.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/music/As It Was.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/music/Bajo el agua.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/music/Colapso.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/music/Embrace.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/music/If I could fly.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/music/Nothing Else Matters.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/music/Reminisce.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/music/Rhinestone Eyes.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/music/Sign of the times.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/music/Yesterday.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/music/photograph.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/view/EmotionalHealth.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/view/HealthPromotions.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/view/Information.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/view/Item.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/view/Item2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/view/Page1.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/view/Page2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/view/Page3.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/view/Page4.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/build/classes/view/TecnologyHealth.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Item2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/ItemController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Page1Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Page2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Page3Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/controller/Page4Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/album.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/gotero.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/inhalador.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/inyeccion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/image/solucion.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/another.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/gorillaz.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/pink.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/img/plastic.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/ConsultMusic.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/ConsultNews.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/Music.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/model/News.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/Bajo el agua.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/Colapso.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/Embrace.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/If I could fly.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/Nothing Else Matters.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/Reminisce.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/Sign of the times.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/Yesterday.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/music/photograph.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/Item.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/Item2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/Page1.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/Page2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/Page3.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/view/Page4.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -116,7 +175,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651991659513</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Modulo musica completado :&#10;Falta realizar mejoras en el diseño de los botones .">
+      <created>1653202778703</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1653202778703</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -137,6 +203,7 @@
     <MESSAGE value="Modulo de usuario terminado :&#10;Faltas a realizar:&#10;-En el modulo de registro añadir la restriccion de un correo electronico, al igual que la respectiva restriccion del nombre y el apellido" />
     <MESSAGE value="Modulo de calendario en proceso :&#10;Faltas a realizar:&#10;-En el modulo del calendario se implemento el diseño,falta por realizar la documentacion del medicamento del propio usuario , &quot;traer la informacion de la base de datos &quot;." />
     <MESSAGE value="Modulo agregar medicamento completado :&#10;Falta realizar el refresh del calendario.&#10;Se añadio estilos css a los formularios 1,2,3,4 y 5&quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modulo agregar medicamento completado :&#10;Falta realizar el refresh del calendario.&#10;Se añadio estilos css a los formularios 1,2,3,4 y 5&quot;." />
+    <MESSAGE value="Modulo musica completado :&#10;Falta realizar mejoras en el diseño de los botones ." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modulo musica completado :&#10;Falta realizar mejoras en el diseño de los botones ." />
   </component>
 </project>

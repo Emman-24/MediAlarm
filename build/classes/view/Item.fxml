@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Rectangle2D?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="140.0" prefWidth="138.0" style="-fx-background-color: #2F2B42; -fx-background-radius: 30;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ItemController">
+   <children>
+      <VBox layoutX="72.0" layoutY="-7.0" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="TOP_CENTER" prefHeight="98.0" prefWidth="138.0" style="-fx-background-radius: 30;">
+               <children>
+                  <ImageView fx:id="img" fitHeight="102.0" fitWidth="98.0" opacity="0.89" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/album.png" />
+                     </image>
+                     <viewport>
+                        <Rectangle2D />
+                     </viewport>
+                  </ImageView>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="5.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="36.0" prefWidth="138.0">
+               <children>
+                  <Label fx:id="SongLabel" alignment="CENTER" prefHeight="27.0" prefWidth="112.0" text="Song" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="37.0" prefWidth="220.0">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+               <children>
+                  <Label fx:id="albumLabel" alignment="CENTER" prefHeight="21.0" prefWidth="137.0" text="Album" textFill="WHITE">
+                     <font>
+                        <Font size="10.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
