@@ -4,26 +4,27 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6485a65-6422-48ed-96db-0d5a9e2ac734" name="Changes" comment="Modulo de calendario en proceso :&#10;Faltas a realizar:&#10;-En el modulo del calendario se implemento el diseño,falta por realizar la documentacion del medicamento del propio usuario , &quot;traer la informacion de la base de datos &quot;.">
+    <list default="true" id="a6485a65-6422-48ed-96db-0d5a9e2ac734" name="Changes" comment="Modulo agregar medicamento completado :&#10;Falta realizar el refresh del calendario.&#10;Se añadio estilos css a los formularios 1,2,3,4 y 5&quot;.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/controller/CalendarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/CalendarController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/MainViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MainViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/MedicinesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MedicinesController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/medialarm/MediAlarm.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/medialarm/MediAlarm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/model/Medi.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/model/Medi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/view/Calendar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/view/Calendar.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/view/Menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/view/Menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/MusicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MusicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/model/ConsultMedi.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/model/ConsultMedi.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/view/Medicines.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/view/Medicines.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/view/Music.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/view/Music.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/view/News.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/view/News.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/CalendarController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/CalendarController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MainViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MainViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MedicinesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MedicinesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/medialarm/MediAlarm.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/medialarm/MediAlarm.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/model/Medi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/Medi.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Calendar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Calendar.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/Menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Menu.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ConsultMedi.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ConsultMedi.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Medicines.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Medicines.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/view/Music.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Music.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/view/News.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/News.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,6 +32,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
+    <option name="PUSH_AUTO_UPDATE" value="true" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
@@ -41,17 +43,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/emman/OneDrive/Escritorio/SceneBuilder.lnk",
-    "project.structure.last.edited": "Problems",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/emman/OneDrive/Escritorio/SceneBuilder.lnk&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Problems&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="MediAlarm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="medialarm.MediAlarm" />
@@ -107,7 +109,14 @@
       <option name="project" value="LOCAL" />
       <updated>1651280316898</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Modulo agregar medicamento completado :&#10;Falta realizar el refresh del calendario.&#10;Se añadio estilos css a los formularios 1,2,3,4 y 5&quot;.">
+      <created>1651991659513</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1651991659513</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -127,6 +136,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Modulo de usuario terminado :&#10;Faltas a realizar:&#10;-En el modulo de registro añadir la restriccion de un correo electronico, al igual que la respectiva restriccion del nombre y el apellido" />
     <MESSAGE value="Modulo de calendario en proceso :&#10;Faltas a realizar:&#10;-En el modulo del calendario se implemento el diseño,falta por realizar la documentacion del medicamento del propio usuario , &quot;traer la informacion de la base de datos &quot;." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modulo de calendario en proceso :&#10;Faltas a realizar:&#10;-En el modulo del calendario se implemento el diseño,falta por realizar la documentacion del medicamento del propio usuario , &quot;traer la informacion de la base de datos &quot;." />
+    <MESSAGE value="Modulo agregar medicamento completado :&#10;Falta realizar el refresh del calendario.&#10;Se añadio estilos css a los formularios 1,2,3,4 y 5&quot;." />
+    <option name="LAST_COMMIT_MESSAGE" value="Modulo agregar medicamento completado :&#10;Falta realizar el refresh del calendario.&#10;Se añadio estilos css a los formularios 1,2,3,4 y 5&quot;." />
   </component>
 </project>

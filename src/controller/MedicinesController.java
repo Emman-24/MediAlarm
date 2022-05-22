@@ -2,20 +2,19 @@
 package controller;
 
 import java.net.URL;
-import java.util.Objects;
 import java.util.Optional;
 import java.util.ResourceBundle;
 import javafx.fxml.Initializable;
 import javafx.fxml.FXML;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Alert.AlertType;
-import javafx.scene.control.ButtonBar;
 import javafx.scene.control.ButtonBar.ButtonData;
 import javafx.scene.control.ButtonType;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
+import model.ConsultMedi;
 import model.Medi;
 
 
@@ -64,12 +63,13 @@ public class MedicinesController implements Initializable {
     }
     @Override
     public void initialize(URL url, ResourceBundle rb) {
-       
-    }    
+       PostImageSrc.setLayoutX(42);
+       PostImageSrc.setLayoutY(20);
+    }   
+    
     
       @FXML
-    void OnMedicineClick(MouseEvent event) {
-        //  System.out.println("me diste un click en : "+IdMedicine.getText() );
+    void OnMedicineClick(MouseEvent event) {    
         
          Alert alert = new Alert(AlertType.WARNING);  
          alert.setTitle("MediAlarm");
@@ -83,6 +83,27 @@ public class MedicinesController implements Initializable {
          alert.getButtonTypes().setAll(buttonTypeOne,buttonTypeTwo,buttonTypeCancel);
          
          Optional<ButtonType> result = alert.showAndWait();
+         
+         if(result.get() == buttonTypeOne){
+             ConsultMedi us = new ConsultMedi();
+             
+             boolean can = us.UpdateMedicine(IdMedicine.getText());
+             
+             if(can == true){
+                 System.out.println("Medicamento guardado");
+                
+             }
+         
+         }else if(result.get() == buttonTypeTwo){
+             ConsultMedi us = new ConsultMedi();
+             
+             boolean can = us.DeleteMedicine(IdMedicine.getText());
+             
+             if(can == true){
+                 System.out.println("El medicamento ha sido eliminado");
+             }
+         
+         }
 
     }
 }

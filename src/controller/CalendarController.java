@@ -63,8 +63,7 @@ public class CalendarController implements Initializable {
         String id = IdUser.getText();
         
         List<Medi> user = medi.searchMedicine(id);
-        
-        System.out.println(user.size());
+          
       
         posts = new ArrayList<>(user);
  
@@ -181,6 +180,7 @@ public class CalendarController implements Initializable {
                 secController.onGetData(fullName,IdUser);     
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
+                stage.setResizable(false);
                 stage.setTitle("MediAlarm");
                 stage.show();
     }

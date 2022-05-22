@@ -70,7 +70,7 @@ public class Form2Controller implements Initializable {
             
         }if("Solución".equals(selected)){
             
-             String imgSource = "/image/pastille.png";
+             String imgSource = "/image/solucion.png";
              String id = IdUser.getText();
              String nameMedi = MedicinesName.getText();
               setMyVariable(selected);
@@ -87,7 +87,7 @@ public class Form2Controller implements Initializable {
                 stage.show();
  
         }if("Inyección".equals(selected)){
-            String imgSource = "/image/pastille.png";
+            String imgSource = "/image/inyeccion.png";
             String id = IdUser.getText();
             String nameMedi = MedicinesName.getText();
              setMyVariable(selected);
@@ -104,7 +104,7 @@ public class Form2Controller implements Initializable {
                 stage.show();
         
         }if("Gotas".equals(selected)){
-             String imgSource = "/image/pastille.png";
+             String imgSource = "/image/gotero.png";
              String id = IdUser.getText();
              String nameMedi = MedicinesName.getText();
              setMyVariable(selected);
@@ -121,7 +121,7 @@ public class Form2Controller implements Initializable {
                 stage.show();
             
         }if("Inhalador".equals(selected)){
-             String imgSource = "/image/pastille.png";
+             String imgSource = "/image/inhalador.png";
              String id = IdUser.getText();
              String nameMedi = MedicinesName.getText();
               setMyVariable(selected);

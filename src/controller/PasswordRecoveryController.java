@@ -1,6 +1,7 @@
 
 package controller;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.Properties;
 import java.util.Random;
@@ -44,6 +45,18 @@ public class PasswordRecoveryController implements Initializable {
         
      String email = txtEmail.getText();
      
+     if(email == ""){
+         
+            Alert alert = new Alert(Alert.AlertType.WARNING);
+            alert.setHeaderText(null);
+            alert.setTitle("Error");
+            alert.setContentText("Debes ingresar un corro electrónico.");
+            alert.showAndWait();
+     
+     }else{
+     
+     
+     
      ConsultUser con = new ConsultUser();
      
      String searchName = con.VerifyEmailUser(email);
@@ -55,8 +68,8 @@ public class PasswordRecoveryController implements Initializable {
                     Random rand = new Random();
                     radomCode = rand.nextInt(99999);
                     String host = "smtp.gmail.com";
-                    String user = "";
-                    String pass = "";
+                    String user = "medialarm2098@gmail.com";
+                    String pass = "medialarm123";
                     String to = email;
                     String subject = "Reseting code";
                     String message = "Your reset code is "+radomCode;
@@ -104,9 +117,9 @@ public class PasswordRecoveryController implements Initializable {
                 Parent root = (Parent) loader.load();
                 
                 CodePasswordController secController = loader.getController();
-                secController.OnGetData(radomCode, searchName, email);
-                
+                secController.OnGetData(radomCode, searchName, email);    
                 Stage stage = new Stage();
+                stage.setResizable(false);
                 stage.setScene(new Scene(root));
                 stage.show();
                 
@@ -133,10 +146,10 @@ public class PasswordRecoveryController implements Initializable {
             alert.showAndWait();
 
 
-}
-     
-    
+            }
         
+        }
+     
     }
    
     @Override
@@ -147,6 +160,19 @@ public class PasswordRecoveryController implements Initializable {
         
     }    
 
-   
+   @FXML
+    void returnMenuButton(ActionEvent event) throws IOException {
+        
+        sendCodeButton.getScene().getWindow().hide();
+        
+         Parent root = FXMLLoader.load(getClass().getResource("/view/MainView.fxml"));     
+           Scene scene = new Scene(root);     
+           Stage stage = new Stage();  
+           stage.setResizable(false);
+           stage.setScene(scene);       
+           stage.setTitle("MediAlarm"); 
+           stage.show();
+    
+    }
     
 }

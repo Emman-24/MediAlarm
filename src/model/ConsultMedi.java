@@ -96,7 +96,51 @@ public class ConsultMedi extends MysqlConnect {
      
      public boolean UpdateMedicine(String id){
      
-        String sql = "UPDATE `medicine` SET `showMedi` = '0' WHERE `medicine`.`id` = 10;";
-     return false;
+        Connection connection = null;
+        MysqlConnect miConexion = new MysqlConnect();
+        PreparedStatement statement = null;
+              
+        connection = miConexion.getConnection();
+        
+         try {
+             
+              String sql = "UPDATE `medicine` SET `showMedi` = '0' WHERE `medicine`.`id` = ?;";
+              statement = connection.prepareStatement(sql);
+              statement.setString(1,id);
+              
+              statement.execute();
+              
+              return true;
+              
+            
+         }   catch (Exception e) {
+             
+             return false;
+         }
+       
+
+     }
+     
+     public boolean DeleteMedicine(String id){
+         
+        Connection connection = null;
+        MysqlConnect miConexion = new MysqlConnect();
+        PreparedStatement statement = null;
+              
+        connection = miConexion.getConnection();
+        
+         try {
+             
+             String sql = "DELETE FROM `medicine` WHERE `id` = ?";
+             statement = connection.prepareStatement(sql);
+             statement.setString(1,id);
+              
+              statement.execute();
+              
+              return true;
+             
+         } catch (Exception e) {
+             return false;
+         }
      }
 }

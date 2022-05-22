@@ -7,8 +7,7 @@ public class User extends MysqlConnect {
     private int user_id;
     private String name;
     private String lastname;
-   
-    
+     
     
     public User(String name, String lastname) {
         this.name = name;

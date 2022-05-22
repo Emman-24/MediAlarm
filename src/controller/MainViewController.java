@@ -62,15 +62,17 @@ public class MainViewController implements Initializable  {
            
         String fullname =con.searchFullName(validate);
            
-          
+          //fullname
+            String tittle = "Bienvenido(a) a MediAlarm";
+            String message = "Hola "+fullname+ " es un gusto.";
+            
+            
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setHeaderText(null);
-            alert.setTitle("Login exitoso");
-            alert.setContentText("Bienvenido "+fullname);
+            alert.setTitle(tittle);
+            alert.setContentText(message);
             alert.showAndWait();
-            
-            
-            
+   
                 logginButton.getScene().getWindow().hide();
                 
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Menu.fxml"));
@@ -79,6 +81,7 @@ public class MainViewController implements Initializable  {
                 secController.onGetData(fullname, validate);     
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
+                stage.setResizable(false);
                 stage.setTitle("MediAlarm");
                 stage.show();
          
@@ -103,7 +106,8 @@ public class MainViewController implements Initializable  {
         
     Parent root = FXMLLoader.load(getClass().getResource("/view/Register.fxml"));     
            Scene scene = new Scene(root);     
-           Stage stage = new Stage();     
+           Stage stage = new Stage();  
+           stage.setResizable(false);
            stage.setScene(scene);       
            stage.setTitle("MediAlarm"); 
            stage.show();
@@ -118,6 +122,7 @@ public class MainViewController implements Initializable  {
     Parent root = FXMLLoader.load(getClass().getResource("/view/PasswordRecovery.fxml"));     
            Scene scene = new Scene(root);     
            Stage stage = new Stage();     
+           stage.setResizable(false);
            stage.setScene(scene);       
            stage.setTitle("MediAlarm"); 
            stage.show();

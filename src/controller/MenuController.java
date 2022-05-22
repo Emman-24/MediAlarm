@@ -48,7 +48,8 @@ public class MenuController implements Initializable {
            Parent root = FXMLLoader.load(getClass().getResource("/view/MainView.fxml")); 
            stage= (Stage)((Node)event.getSource()).getScene().getWindow();
            scene = new Scene(root);     
-           Stage stage = new Stage();     
+           Stage stage = new Stage();
+           stage.setResizable(false);
            stage.setScene(scene);       
            stage.setTitle("MediAlarm"); 
            stage.show();
@@ -73,6 +74,7 @@ public class MenuController implements Initializable {
                 secController.onGetData(fullName,IdUser);     
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
+                stage.setResizable(false);
                 stage.setTitle("MediAlarm");
                 stage.show();
 
@@ -80,26 +82,39 @@ public class MenuController implements Initializable {
     
     @FXML
     void OnMussicButton(ActionEvent event) throws IOException {
+        
+                String fullName = nameUserLabel.getText();
+                String IdUser = UserId.getText();
+        
            AnchorPane.getScene().getWindow().hide();
         
-           Parent root = FXMLLoader.load(getClass().getResource("/view/Music.fxml"));     
-           Scene scene = new Scene(root);     
-           Stage stage = new Stage();     
-           stage.setScene(scene);       
-           stage.setTitle("MediAlarm"); 
-           stage.show();
+          FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Music.fxml"));
+                Parent root = (Parent) loader.load();           
+                MusicController secController = loader.getController();
+                secController.onGetData(fullName,IdUser);     
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.setResizable(false);
+                stage.setTitle("MediAlarm");
+                stage.show();
     }
 
     @FXML
-    void OnNewsButton(ActionEvent event) throws IOException {
-        AnchorPane.getScene().getWindow().hide();
-        
-           Parent root = FXMLLoader.load(getClass().getResource("/view/News.fxml"));     
-           Scene scene = new Scene(root);     
-           Stage stage = new Stage();     
-           stage.setScene(scene);       
-           stage.setTitle("MediAlarm"); 
-           stage.show();
+    void OnNewsButton(ActionEvent event) throws IOException { 
+         String fullName = nameUserLabel.getText();
+         String IdUser = UserId.getText();
+          
+         AnchorPane.getScene().getWindow().hide();
+         
+         FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/News.fxml"));
+                Parent root = (Parent) loader.load();           
+                NewsController secController = loader.getController();
+                secController.onGetData(fullName,IdUser);     
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.setResizable(false);
+                stage.setTitle("MediAlarm");
+                stage.show();
 
     }
     

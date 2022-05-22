@@ -19,13 +19,13 @@ public class MysqlConnect {
             conn = DriverManager.getConnection(url,usuario,password);
             
             if(conn!=null){
-                System.out.println("Conexion exitosa a la Base de datos: "+nombreBd);
+                
             }
             
         } catch (ClassNotFoundException e) {
-            System.out.println("Ocurre una ClassNotFoundException : "+e.getMessage());
+           
         } catch (SQLException e) { 
-            System.out.println("Ocurre una SQLException: "+ e.getMessage());
+           
              
          } 
     }

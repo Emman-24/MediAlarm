@@ -9,10 +9,6 @@ import javafx.stage.Stage;
 
 
 
-/**
- *
- * @author emman
- */
 public class MediAlarm extends Application {
     
     public Label lab1;
@@ -29,8 +25,8 @@ public class MediAlarm extends Application {
         Scene scene = new Scene(root,860,560);
          stage.setTitle("MediAlarm");
          stage.setResizable(false);
-        stage.setScene(scene);
-        stage.show();
+         stage.setScene(scene);
+         stage.show();
     }
     
 }
