@@ -16,6 +16,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import model.ConsultUser;
@@ -44,6 +45,8 @@ public class MainViewController implements Initializable  {
     @FXML
     private TextField emailTextField;
     
+    private static String myVariable;
+    
     
     @FXML
     private void onLoginButtonClick(ActionEvent event) throws IOException{
@@ -62,7 +65,7 @@ public class MainViewController implements Initializable  {
            
         String fullname =con.searchFullName(validate);
            
-          //fullname
+          
             String tittle = "Bienvenido(a) a MediAlarm";
             String message = "Hola "+fullname+ " es un gusto.";
             
@@ -75,12 +78,15 @@ public class MainViewController implements Initializable  {
    
                 logginButton.getScene().getWindow().hide();
                 
+                setMyVariable(validate);
+                
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Menu.fxml"));
                 Parent root = (Parent) loader.load();           
                 MenuController secController = loader.getController();
                 secController.onGetData(fullname, validate);     
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
+                stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.setResizable(false);
                 stage.setTitle("MediAlarm");
                 stage.show();
@@ -109,6 +115,7 @@ public class MainViewController implements Initializable  {
            Stage stage = new Stage();  
            stage.setResizable(false);
            stage.setScene(scene);       
+           stage.getIcons().add(new Image("/image/clockW.png"));
            stage.setTitle("MediAlarm"); 
            stage.show();
     
@@ -124,6 +131,7 @@ public class MainViewController implements Initializable  {
            Stage stage = new Stage();     
            stage.setResizable(false);
            stage.setScene(scene);       
+           stage.getIcons().add(new Image("/image/clockW.png"));
            stage.setTitle("MediAlarm"); 
            stage.show();
     
@@ -133,9 +141,14 @@ public class MainViewController implements Initializable  {
     public void initialize(URL url, ResourceBundle rb) {
              
     }    
+       
     
-    
-    
- 
+  public static String getMyVariable() {
+        return myVariable;
+    }
+
+    public static void setMyVariable(String myVariable) {
+        MainViewController.myVariable = myVariable;
+    }
   
 }

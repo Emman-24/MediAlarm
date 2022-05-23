@@ -48,7 +48,7 @@
                            <children>
                               <ImageView fx:id="SongCover" fitHeight="258.0" fitWidth="251.0" opacity="0.31" pickOnBounds="true" preserveRatio="true">
                                  <image>
-                                    <Image url="@../img/gorillaz.png" />
+                                    <Image url="@../image/gorillaz.png" />
                                  </image>
                               </ImageView>
                            </children>

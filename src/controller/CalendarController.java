@@ -3,9 +3,14 @@ package controller;
 
 import java.io.IOException;
 import java.net.URL;
+import java.time.LocalTime;
+import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
+import java.util.Timer;
+import java.util.TimerTask;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.fxml.FXML;
@@ -13,9 +18,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.geometry.Insets;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
+import javafx.scene.image.Image;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
@@ -50,7 +57,7 @@ public class CalendarController implements Initializable {
     @FXML
     private Label text1;
 
-   private List<Medi> posts;
+    private List<Medi> posts;
        
     
     @Override
@@ -64,8 +71,10 @@ public class CalendarController implements Initializable {
         
         List<Medi> user = medi.searchMedicine(id);
           
-      
+             
         posts = new ArrayList<>(user);
+        
+       
  
         
         int columns = 0;
@@ -80,13 +89,7 @@ public class CalendarController implements Initializable {
                 circle.setVisible(false);
                 AddMedicineFirst.setVisible(false);
                 text1.setVisible(false);
-      
-                /*
-                for (Medi entero : posts) {                      
-                    System.out.println(entero.getHora());           
-                }               
-                */
-                
+              
                 try {
 
                     for (int i = 0; i<posts.size(); i++){
@@ -143,6 +146,7 @@ public class CalendarController implements Initializable {
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
                 stage.setTitle("MediAlarm");
+                stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
     }
 
@@ -159,6 +163,7 @@ public class CalendarController implements Initializable {
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
                 stage.setTitle("MediAlarm");
+                stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
                
     
@@ -182,6 +187,7 @@ public class CalendarController implements Initializable {
                 stage.setScene(new Scene(root));
                 stage.setResizable(false);
                 stage.setTitle("MediAlarm");
+                stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
     }
     

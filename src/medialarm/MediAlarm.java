@@ -5,6 +5,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 
 
@@ -24,6 +25,7 @@ public class MediAlarm extends Application {
         Parent root = FXMLLoader.load(getClass().getResource("/view/MainView.fxml"));  
         Scene scene = new Scene(root,860,560);
          stage.setTitle("MediAlarm");
+         stage.getIcons().add(new Image("/image/clockW.png"));
          stage.setResizable(false);
          stage.setScene(scene);
          stage.show();
