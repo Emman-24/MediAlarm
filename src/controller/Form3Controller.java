@@ -15,6 +15,8 @@ import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 
@@ -39,6 +41,10 @@ public class Form3Controller implements Initializable {
 
     @FXML
     private TextField NumeroCantidad;
+    
+    
+    @FXML
+    private Label nameUser;
     
 
     @Override
@@ -111,6 +117,7 @@ public class Form3Controller implements Initializable {
         String nameMedi = NameMedi.getText();
         String imgSource = ImgSource.getText();
         String method = Method.getText();
+        String name  = nameUser.getText();
      
        setMyVariable(method);
        MyListView.getScene().getWindow().hide();
@@ -119,20 +126,23 @@ public class Form3Controller implements Initializable {
     FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Form4.fxml"));
                 Parent root = (Parent) loader.load();           
                 Form4Controller secController = loader.getController();
-                secController.onGetData(id,nameMedi,imgSource,numCan,selected,method);     
+                secController.onGetData(id,nameMedi,imgSource,numCan,selected,method,name);     
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
+                stage.initModality(Modality.APPLICATION_MODAL); 
                 stage.setTitle("MediAlarm");
+                stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
         
         
     }
 
-    void onGetData(String id, String nameMedi, String imgSource, String selected) {
+    void onGetData(String id, String nameMedi, String imgSource, String selected,String name) {
             IdUser.setText(id);
             NameMedi.setText(nameMedi);
             ImgSource.setText(imgSource);
             Method.setText(selected);
+            nameUser.setText(name);
         
     }
     

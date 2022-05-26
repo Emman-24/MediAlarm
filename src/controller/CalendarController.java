@@ -10,8 +10,9 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.application.Platform;
-import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -23,9 +24,11 @@ import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.ScrollPane;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.VBox;
 import javafx.scene.shape.Circle;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 import model.ConsultMedi;
 import model.Medi;
@@ -56,29 +59,39 @@ public class CalendarController implements Initializable {
 
     @FXML
     private Label text1;
+    
+    @FXML
+    private Button BackButton;
 
     private List<Medi> posts;
        
+    private Stage stage;
+     private Scene scene;
+    private Parent root;
+
     
     @Override
     public void initialize(URL url, ResourceBundle rb) {
           
         ConsultMedi medi = new ConsultMedi();
-        
+              
         IdUser.setText(IdUser.getText() + MenuController.getMyVariable());
+        NameUser.setText(NameUser.getText() + MenuController.getMyVarible2());
         
         String id = IdUser.getText();
+        String name = NameUser.getText();
         
+   
+     
         List<Medi> user = medi.searchMedicine(id);
           
              
         posts = new ArrayList<>(user);
-        
        
- 
+      
         
         int columns = 0;
-        int rows = 0;
+        int rows = 0;    
 
         if(user.size() < 1 ){
             
@@ -107,7 +120,7 @@ public class CalendarController implements Initializable {
                                     VBox postBox = fxmlLoader.load();
 
                                     MedicinesController medicinesController = fxmlLoader.getController();
-                                    medicinesController.setData(posts.get(i));
+                                    medicinesController.setData(posts.get(i),name);
 
                                     if (rows == 2){
                                         columns = 0;
@@ -116,15 +129,106 @@ public class CalendarController implements Initializable {
 
                                     rows = rows + 1;
                                     postGrid.add(postBox,columns,rows++);
-                                    GridPane.setMargin(postBox,new Insets(26));          
+                                    GridPane.setMargin(postBox,new Insets(26));
+                                    
+                                  
                                  
                         }
 
                     }catch (IOException e) {
 
+                        
                 }
-                
+          
+               
         }
+        
+      
+        
+        
+        BackButton.setOnAction((event) -> {
+            
+                  
+             
+              String fullName = NameUser.getText();
+              String IdUser = this.IdUser.getText();
+
+              BackButton.getScene().getWindow().hide();
+            
+              
+               FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Menu.fxml"));
+                      Parent root = null;    
+
+              try {
+                root = (Parent) loader.load();
+            } catch (IOException ex) {
+                Logger.getLogger(MusicController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+               MenuController secController = loader.getController();
+                      secController.onGetData(fullName,IdUser);     
+                      Stage stage = new Stage();
+                      stage.setScene(new Scene(root));
+                      stage.setTitle("MediAlarm");
+                      stage.getIcons().add(new Image("/image/clockW.png"));
+                      stage.show();
+            
+            
+        });
+        
+        addMedicineButton.setOnAction((event) -> {
+            
+           
+            
+               
+               IdUser.getScene().getWindow().hide();
+                    
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Form1.fxml"));
+                Parent root = null;           
+            try {
+                root = loader.load();
+            } catch (IOException ex) {
+                Logger.getLogger(CalendarController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                Form1Controller secController = loader.getController();
+                secController.onGetData(id,name);     
+                Scene scene = new Scene(root);
+                Stage stage = new Stage();
+                stage.initModality(Modality.APPLICATION_MODAL);              
+                stage.setScene(scene);
+                stage.setTitle("MediAlarm");
+                stage.getIcons().add(new Image("/image/clockW.png"));
+                stage.showAndWait();    
+            
+            
+            
+        });
+        
+        AddMedicineFirst.setOnAction((event) -> {
+            
+            
+             IdUser.getScene().getWindow().hide();
+                    
+                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Form1.fxml"));
+                Parent root = null;           
+            try {
+                root = (Parent)loader.load();
+            } catch (IOException ex) {
+                Logger.getLogger(CalendarController.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                Form1Controller secController = loader.getController();
+                secController.onGetData(id,name);     
+                Scene scene = new Scene(root);
+                Stage stage = new Stage();
+                stage.initModality(Modality.APPLICATION_MODAL);              
+                stage.setScene(scene);
+                stage.setTitle("MediAlarm");
+                stage.getIcons().add(new Image("/image/clockW.png"));
+                stage.showAndWait();
+            
+        });
+        
+        
         
     }    
     
@@ -135,60 +239,8 @@ public class CalendarController implements Initializable {
 
     }
      
-         @FXML
-    void OnAddMedicineFirstButton(ActionEvent event) throws IOException {
-        String id = IdUser.getText();
-              
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Form1.fxml"));
-                Parent root = (Parent)loader.load();           
-                Form1Controller secController = loader.getController();
-                secController.onGetData(id);     
-                Stage stage = new Stage();
-                stage.setScene(new Scene(root));
-                stage.setTitle("MediAlarm");
-                stage.getIcons().add(new Image("/image/clockW.png"));
-                stage.show();
-    }
+  
 
      
-    @FXML
-    void OnClickAddMedicineButton(ActionEvent event) throws IOException {
-
-               String id = IdUser.getText();
-                    
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Form1.fxml"));
-                Parent root = (Parent)loader.load();           
-                Form1Controller secController = loader.getController();
-                secController.onGetData(id);     
-                Stage stage = new Stage();
-                stage.setScene(new Scene(root));
-                stage.setTitle("MediAlarm");
-                stage.getIcons().add(new Image("/image/clockW.png"));
-                stage.show();
-               
-    
-              
-        
-    }
-    
-       @FXML
-    void onBackButton(ActionEvent event) throws IOException {
-        
-                String fullName =NameUser.getText() ;
-                String IdUser = this.IdUser.getText();
-                
-                circle.getScene().getWindow().hide();           
-                
-                FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Menu.fxml"));
-                Parent root = (Parent) loader.load();           
-                MenuController secController = loader.getController();
-                secController.onGetData(fullName,IdUser);     
-                Stage stage = new Stage();
-                stage.setScene(new Scene(root));
-                stage.setResizable(false);
-                stage.setTitle("MediAlarm");
-                stage.getIcons().add(new Image("/image/clockW.png"));
-                stage.show();
-    }
     
 }

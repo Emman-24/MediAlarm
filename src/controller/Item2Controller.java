@@ -28,11 +28,6 @@ public class Item2Controller implements Initializable {
     
     private News news;
     
-//    @FXML
- //   void openLink(ActionEvent event) throws URISyntaxException, IOException {
- //       Desktop.getDesktop().browse(new URI("http://google.com.co"));
- //   }
-    
     @Override
     public void initialize(URL url, ResourceBundle rb) {
        

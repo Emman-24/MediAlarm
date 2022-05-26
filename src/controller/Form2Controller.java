@@ -13,6 +13,8 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Label;
 import javafx.scene.control.ListView;
+import javafx.scene.image.Image;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 
@@ -27,6 +29,9 @@ public class Form2Controller implements Initializable {
     private Label MedicinesName;
     
     @FXML
+    private Label nameUser;
+    
+    @FXML
     private ListView<String> ListView;
   
     
@@ -39,9 +44,11 @@ public class Form2Controller implements Initializable {
         
     }    
 
-    void onGetData(String id, String Medicine) {
+    void onGetData(String id, String Medicine,String name) {
         IdUser.setText(id);
         MedicinesName.setText(Medicine);
+        nameUser.setText(name);
+        
     }
     
     @FXML
@@ -54,6 +61,7 @@ public class Form2Controller implements Initializable {
             String imgSource = "/image/pastille.png";
             String id = IdUser.getText();
             String nameMedi = MedicinesName.getText();
+            String name =  nameUser.getText();
             
             setMyVariable(selected);
             
@@ -62,10 +70,12 @@ public class Form2Controller implements Initializable {
                 FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Form3.fxml"));
                 Parent root = (Parent) loader.load();           
                 Form3Controller secController = loader.getController();
-                secController.onGetData(id,nameMedi,imgSource,selected);     
+                secController.onGetData(id,nameMedi,imgSource,selected,name);     
                 Stage stage = new Stage();
+                stage.initModality(Modality.APPLICATION_MODAL); 
                 stage.setScene(new Scene(root));
                 stage.setTitle("MediAlarm");
+                stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
             
         }if("Solución".equals(selected)){
@@ -73,6 +83,8 @@ public class Form2Controller implements Initializable {
              String imgSource = "/image/solucion.png";
              String id = IdUser.getText();
              String nameMedi = MedicinesName.getText();
+             String name =  nameUser.getText();
+
               setMyVariable(selected);
               
               ListView.getScene().getWindow().hide();
@@ -80,16 +92,20 @@ public class Form2Controller implements Initializable {
                  FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Form3.fxml"));
                 Parent root = (Parent) loader.load();           
                 Form3Controller secController = loader.getController();
-                secController.onGetData(id,nameMedi,imgSource,selected);     
+                secController.onGetData(id,nameMedi,imgSource,selected,name);     
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
+                stage.initModality(Modality.APPLICATION_MODAL); 
                 stage.setTitle("MediAlarm");
+                stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
  
         }if("Inyección".equals(selected)){
             String imgSource = "/image/inyeccion.png";
             String id = IdUser.getText();
             String nameMedi = MedicinesName.getText();
+            String name =  nameUser.getText();
+
              setMyVariable(selected);
              
              ListView.getScene().getWindow().hide();
@@ -97,16 +113,20 @@ public class Form2Controller implements Initializable {
                  FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Form3.fxml"));
                 Parent root = (Parent) loader.load();           
                 Form3Controller secController = loader.getController();
-                secController.onGetData(id,nameMedi,imgSource,selected);     
+                secController.onGetData(id,nameMedi,imgSource,selected,name);     
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
+                stage.initModality(Modality.APPLICATION_MODAL); 
                 stage.setTitle("MediAlarm");
+                stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
         
         }if("Gotas".equals(selected)){
              String imgSource = "/image/gotero.png";
              String id = IdUser.getText();
              String nameMedi = MedicinesName.getText();
+             String name =  nameUser.getText();
+
              setMyVariable(selected);
              
              ListView.getScene().getWindow().hide();
@@ -114,16 +134,20 @@ public class Form2Controller implements Initializable {
                  FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Form3.fxml"));
                 Parent root = (Parent) loader.load();           
                 Form3Controller secController = loader.getController();
-                secController.onGetData(id,nameMedi,imgSource,selected);     
+                secController.onGetData(id,nameMedi,imgSource,selected,name);     
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
+                stage.initModality(Modality.APPLICATION_MODAL); 
                 stage.setTitle("MediAlarm");
+                stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
             
         }if("Inhalador".equals(selected)){
              String imgSource = "/image/inhalador.png";
              String id = IdUser.getText();
              String nameMedi = MedicinesName.getText();
+             String name =  nameUser.getText();
+
               setMyVariable(selected);
               
               ListView.getScene().getWindow().hide();
@@ -131,10 +155,12 @@ public class Form2Controller implements Initializable {
                  FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Form3.fxml"));
                 Parent root = (Parent) loader.load();           
                 Form3Controller secController = loader.getController();
-                secController.onGetData(id,nameMedi,imgSource,selected);     
+                secController.onGetData(id,nameMedi,imgSource,selected,name);     
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
+                stage.initModality(Modality.APPLICATION_MODAL); 
                 stage.setTitle("MediAlarm");
+                stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
             
         }     

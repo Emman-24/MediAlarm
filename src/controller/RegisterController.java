@@ -15,6 +15,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import model.ConsultUser;
 import model.User;
@@ -54,6 +55,7 @@ public class RegisterController implements Initializable {
            Stage stage = new Stage();     
            stage.setScene(scene);       
            stage.setTitle("MediAlarm"); 
+           stage.getIcons().add(new Image("/image/clockW.png"));
            stage.show();
     
     }
@@ -101,6 +103,7 @@ public class RegisterController implements Initializable {
                           Stage stage = new Stage();     
                           stage.setScene(scene);       
                           stage.setTitle("MediAlarm"); 
+                          stage.getIcons().add(new Image("/image/clockW.png"));
                           stage.show();
                        
                        

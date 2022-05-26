@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6485a65-6422-48ed-96db-0d5a9e2ac734" name="Changes" comment="Modulo musica completado :&#10;Falta realizar mejoras en el diseño de los botones .">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="a6485a65-6422-48ed-96db-0d5a9e2ac734" name="Changes" comment="Alarma de notificaciones completado :&#10;Falta realizar:&#10;-Terminar el hilo cuando el usuario termine la sesion&#10;-Revisar la alarma en el caso que no haya ningun medicamento registrado." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -111,7 +109,21 @@
       <option name="project" value="LOCAL" />
       <updated>1653236356104</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Alarma de notificaciones completado :&#10;Falta realizar:&#10;-Terminar el hilo cuando el usuario termine la sesion&#10;-Revisar la alarma en el caso que no haya ningun medicamento registrado.">
+      <created>1653277845264</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653277845264</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Alarma de notificaciones completado :&#10;Falta realizar:&#10;-Terminar el hilo cuando el usuario termine la sesion&#10;-Revisar la alarma en el caso que no haya ningun medicamento registrado.">
+      <created>1653277960308</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653277960308</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -133,6 +145,7 @@
     <MESSAGE value="Modulo de calendario en proceso :&#10;Faltas a realizar:&#10;-En el modulo del calendario se implemento el diseño,falta por realizar la documentacion del medicamento del propio usuario , &quot;traer la informacion de la base de datos &quot;." />
     <MESSAGE value="Modulo agregar medicamento completado :&#10;Falta realizar el refresh del calendario.&#10;Se añadio estilos css a los formularios 1,2,3,4 y 5&quot;." />
     <MESSAGE value="Modulo musica completado :&#10;Falta realizar mejoras en el diseño de los botones ." />
-    <option name="LAST_COMMIT_MESSAGE" value="Modulo musica completado :&#10;Falta realizar mejoras en el diseño de los botones ." />
+    <MESSAGE value="Alarma de notificaciones completado :&#10;Falta realizar:&#10;-Terminar el hilo cuando el usuario termine la sesion&#10;-Revisar la alarma en el caso que no haya ningun medicamento registrado." />
+    <option name="LAST_COMMIT_MESSAGE" value="Alarma de notificaciones completado :&#10;Falta realizar:&#10;-Terminar el hilo cuando el usuario termine la sesion&#10;-Revisar la alarma en el caso que no haya ningun medicamento registrado." />
   </component>
 </project>

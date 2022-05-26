@@ -3,42 +3,75 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
-<VBox fx:id="Vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="569.0" style="-fx-background-color: #2F2B42;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Form1Controller">
-   <children>
-      <Pane prefHeight="174.0" prefWidth="569.0" style="-fx-background-color: #FC2A52; -fx-background-radius: 50;">
+
+<BorderPane maxWidth="0.0" prefHeight="0.0" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Form1Controller">
+   <center>
+      <VBox fx:id="Vbox" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="572.0" prefWidth="569.0" style="-fx-background-color: #2F2B42;">
          <children>
-            <Label layoutX="217.0" layoutY="14.0" prefHeight="21.0" prefWidth="134.0" text="Añadir Medicación" textFill="WHITE">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="159.0" layoutY="86.0" prefHeight="21.0" prefWidth="251.0" text="¿Qué medicamento quiere agregar?" textFill="WHITE">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
+            <Pane prefHeight="174.0" prefWidth="569.0" style="-fx-background-color: #FC2A52; -fx-background-radius: 50;">
+               <children>
+                  <Label layoutX="217.0" layoutY="14.0" prefHeight="21.0" prefWidth="134.0" text="Añadir Medicación" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="159.0" layoutY="86.0" prefHeight="21.0" prefWidth="251.0" text="¿Qué medicamento quiere agregar?" textFill="WHITE">
+                     <font>
+                        <Font size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </Pane>
+            <Pane prefHeight="401.0" prefWidth="569.0" style="-fx-background-color: #2F2B42;">
+               <children>
+                  <Button layoutX="120.0" layoutY="256.0" mnemonicParsing="false" onAction="#OnNextForm" prefHeight="51.0" prefWidth="330.0" style="-fx-background-color: #524A7B; -fx-background-radius: 22;" text="Proximo" textFill="WHITE">
+                     <font>
+                        <Font name="Open Sans" size="15.0" />
+                     </font>
+                  </Button>
+                  <TextField fx:id="MedicineName" alignment="CENTER" layoutX="62.0" layoutY="99.0" prefHeight="51.0" prefWidth="445.0" style="-fx-background-color: #2F2B42; -fx-text-fill: white;">
+                     <font>
+                        <Font size="28.0" />
+                     </font>
+                  </TextField>
+                  <Line endX="222.99996948242188" endY="-1.52587890625E-5" layoutX="284.0" layoutY="150.0" startX="-221.99998474121094" startY="-1.52587890625E-5" stroke="#707070" />
+                  <Label fx:id="IdUser" layoutX="285.0" layoutY="323.0" textFill="WHITE" visible="false" />
+               </children>
+            </Pane>
          </children>
-      </Pane>
-      <Pane prefHeight="401.0" prefWidth="569.0" style="-fx-background-color: #2F2B42;">
+      </VBox>
+   </center>
+   <left>
+      <Pane prefHeight="560.0" prefWidth="311.0" style="-fx-background-color: #393251;" BorderPane.alignment="CENTER">
          <children>
-            <Button layoutX="120.0" layoutY="256.0" mnemonicParsing="false" onAction="#OnNextForm" prefHeight="51.0" prefWidth="330.0" style="-fx-background-color: #524A7B; -fx-background-radius: 22;" text="Proximo" textFill="WHITE">
+            <ImageView fitHeight="34.88" fitWidth="34.88" layoutX="14.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true" x="17.0" y="60.56">
+               <image>
+                  <Image url="@../image/icon-user.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="NameUser" layoutX="79.0" layoutY="82.0" prefHeight="23.0" prefWidth="202.0" textFill="WHITE">
                <font>
                   <Font name="Open Sans" size="15.0" />
                </font>
+            </Label>
+            <Button layoutX="15.0" layoutY="509.0" mnemonicParsing="false" onAction="#onBackButton" prefHeight="34.0" prefWidth="66.0" style="-fx-background-color: #393251;">
+               <graphic>
+                  <ImageView fitHeight="41.0" fitWidth="44.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/row.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
             </Button>
-            <TextField fx:id="MedicineName" alignment="CENTER" layoutX="62.0" layoutY="99.0" prefHeight="51.0" prefWidth="445.0" style="-fx-background-color: #2F2B42; -fx-text-fill: white;">
-               <font>
-                  <Font size="28.0" />
-               </font>
-            </TextField>
-            <Line endX="222.99996948242188" endY="-1.52587890625E-5" layoutX="284.0" layoutY="150.0" startX="-221.99998474121094" startY="-1.52587890625E-5" stroke="#707070" />
-            <Label fx:id="IdUser" layoutX="285.0" layoutY="323.0" textFill="WHITE" visible="false" />
          </children>
       </Pane>
-   </children>
-</VBox>
+   </left>
+</BorderPane>

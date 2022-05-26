@@ -15,6 +15,7 @@ import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
 import javafx.scene.control.PasswordField;
+import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import model.ConsultUser;
 import model.User_Seguity;
@@ -69,6 +70,7 @@ public class NewPasswordController implements Initializable {
                           Stage stage = new Stage();     
                           stage.setScene(scene);       
                           stage.setTitle("MediAlarm"); 
+                          stage.getIcons().add(new Image("/image/clockW.png"));
                           stage.show();
             
             }else if( result == false){

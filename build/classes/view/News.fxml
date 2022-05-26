@@ -73,7 +73,7 @@
                   </Button>
                </children>
             </VBox>
-            <Button mnemonicParsing="false" onAction="#onReturnMenu" prefHeight="29.44" prefWidth="29.44" style="-fx-background-color: #2F2B42;">
+            <Button fx:id="ReturnButton" mnemonicParsing="false" prefHeight="29.44" prefWidth="29.44" style="-fx-background-color: #2F2B42;">
                <graphic>
                   <ImageView fitHeight="29.44" fitWidth="29.44" pickOnBounds="true" preserveRatio="true">
                      <image>

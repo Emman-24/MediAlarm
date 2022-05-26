@@ -13,7 +13,9 @@ import javafx.scene.Scene;
 import javafx.scene.control.ChoiceBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
+import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
+import javafx.stage.Modality;
 import javafx.stage.Stage;
 
 public class Form4Controller implements Initializable {
@@ -45,6 +47,9 @@ public class Form4Controller implements Initializable {
 
     @FXML
     private Label selected;
+    
+    @FXML
+    private Label nameUser;
     
     @FXML
     private Pane Pane2;
@@ -81,13 +86,14 @@ public class Form4Controller implements Initializable {
         
     }    
 
-    void onGetData(String id, String nameMedi, String imgSource, String numCan, String selected, String method) {
+    void onGetData(String id, String nameMedi, String imgSource, String numCan, String selected, String method,String name) {
         IdUser.setText(id);
         this.nameMedi.setText(nameMedi);
         this.imgSource.setText(imgSource);
         this.numCan.setText(numCan);
         this.selected.setText(selected);
         this.method.setText(method);
+        nameUser.setText(name);
         
     }
     
@@ -101,16 +107,19 @@ public class Form4Controller implements Initializable {
         String numCan = this.numCan.getText();
         String MedidCant = selected.getText();
         String FormaMedi = nameCount.getText();
+        String name = nameUser.getText();
        
         Pane2.getScene().getWindow().hide();
         
        FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Form5.fxml"));
                 Parent root = (Parent) loader.load();           
                 Form5Controller secController = loader.getController();
-                secController.onGetData(idUser,nameMedi,imgSource,numCan,MedidCant,numPills,hour,FormaMedi);     
+                secController.onGetData(idUser,nameMedi,imgSource,numCan,MedidCant,numPills,hour,FormaMedi,name);     
                 Stage stage = new Stage();
                 stage.setScene(new Scene(root));
+                stage.initModality(Modality.APPLICATION_MODAL); 
                 stage.setTitle("MediAlarm");
+                stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
          
           

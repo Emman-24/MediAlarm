@@ -103,7 +103,7 @@
                   </VBox>
                   <HBox alignment="BOTTOM_LEFT" prefHeight="78.0" prefWidth="388.0" VBox.vgrow="ALWAYS">
                      <children>
-                        <Button mnemonicParsing="false" onAction="#OnReturnMenu" prefHeight="50.0" prefWidth="46.0" style="-fx-background-color: #2F2B42;">
+                        <Button fx:id="ReturnButton" mnemonicParsing="false" prefHeight="50.0" prefWidth="46.0" style="-fx-background-color: #2F2B42;">
                            <graphic>
                               <ImageView fitHeight="29.44" fitWidth="29.44" pickOnBounds="true" preserveRatio="true">
                                  <image>

@@ -21,7 +21,7 @@ public class ConsultMedi extends MysqlConnect {
         
         connection = miConexion.getConnection();
         
-        String sql = "SELECT id, NombreMedicamento, Cantidad, MedidaCantida, NumeroPastillas, PosImageSrc, Hora, FormaMedi FROM medicine WHERE idUser = ? AND showMedi = 1";
+        String sql = "SELECT id, NombreMedicamento, Cantidad, MedidaCantida, NumeroPastillas, PosImageSrc, Hora, FormaMedi, idUser FROM medicine WHERE idUser = ? AND showMedi = 1";
         
         try {
             statement = connection.prepareStatement(sql);
@@ -41,6 +41,7 @@ public class ConsultMedi extends MysqlConnect {
                 post.setPostImageSrc(result.getString("PosImageSrc")); 
                 post.setHora(result.getString("Hora"));
                 post.setFormaMedi(result.getString("FormaMedi"));
+                post.setIdUserMedi(result.getString("idUser"));
                 
                 
                 ls.add(post);
