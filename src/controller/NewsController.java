@@ -184,6 +184,11 @@ public class NewsController implements Initializable {
                     stage.setTitle("MediAlarm");
                     stage.getIcons().add(new Image("/image/clockW.png"));
                     stage.show();
+                    
+                     stage.setOnCloseRequest((e) -> {
+                    Platform.exit();
+                    System.exit(0);
+                });
              });
        
             

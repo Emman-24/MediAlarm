@@ -22,7 +22,7 @@ public class Item2Controller implements Initializable {
 
     @FXML
     private Hyperlink NameHiper;
-
+    
     @FXML
     private ImageView img;
     

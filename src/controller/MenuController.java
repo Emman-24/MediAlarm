@@ -22,6 +22,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Alert;
 import javafx.scene.control.Button;
+import javafx.scene.control.ButtonType;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
@@ -58,11 +59,13 @@ public class MenuController implements Initializable {
     @FXML
     private Button NewsButton;
     
+    
     private Stage stage;
     private Scene scene;
     private Parent root;
     
     private List<Medi> posts;
+    
  
     
     @Override
@@ -130,6 +133,16 @@ public class MenuController implements Initializable {
          
          
         LogOutButton.setOnAction((event) -> {
+            
+                Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
+                Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+                stage.getIcons().add(new Image(this.getClass().getResource("/image/clockW.png").toString()));
+                alert.setTitle("MediAlarm");
+                alert.setHeaderText("Estas a punto de terminar tu sesión");
+                alert.setContentText("¿Seguro que quieres cerrar sesión?");
+                
+                if(alert.showAndWait().get() == ButtonType.OK){
+                
                 tarea.cancel();
                 timer.cancel();
 
@@ -145,14 +158,23 @@ public class MenuController implements Initializable {
 
                stage= (Stage)((Node)event.getSource()).getScene().getWindow();
                scene = new Scene(root);     
-               Stage stage = new Stage();
+              // Stage stage = new Stage();
                stage.setResizable(false);
                stage.setScene(scene);       
                stage.setTitle("MediAlarm"); 
                stage.getIcons().add(new Image("/image/clockW.png"));
                stage.show();
+                
+                
+                }
+            
+            
+            
+               
                                   
         });
+        
+        
         
         
         CalendarButton.setOnAction((event) -> {
@@ -182,6 +204,11 @@ public class MenuController implements Initializable {
                 stage.setTitle("MediAlarm");
                 stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
+                
+                 stage.setOnCloseRequest((e) -> {
+                    Platform.exit();
+                    System.exit(0);
+                });
             
         });
         
@@ -214,6 +241,11 @@ public class MenuController implements Initializable {
                 stage.setTitle("MediAlarm");
                 stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
+                
+                 stage.setOnCloseRequest((e) -> {
+                    Platform.exit();
+                    System.exit(0);
+                });
         });
         
         NewsButton.setOnAction((event) -> {
@@ -243,7 +275,17 @@ public class MenuController implements Initializable {
                 stage.setTitle("MediAlarm");
                 stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
+                
+                stage.setOnCloseRequest((e) -> {
+                    Platform.exit();
+                    System.exit(0);
+                });
+                
+                
         });
+        
+        
+       
         
     }
 

@@ -4,14 +4,17 @@ package controller;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
-import javafx.event.ActionEvent;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
-import javafx.scene.control.ChoiceBox;
+import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.Spinner;
+import javafx.scene.control.SpinnerValueFactory;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
 import javafx.scene.layout.Pane;
@@ -30,8 +33,6 @@ public class Form4Controller implements Initializable {
     @FXML
     private Label method;
 
-    @FXML
-    private ChoiceBox<String> myChoiseBox;
 
     @FXML
     private Label nameCount;
@@ -41,6 +42,9 @@ public class Form4Controller implements Initializable {
 
     @FXML
     private Label numCan;
+    
+    @FXML
+    private Button NextFormButton;
 
     @FXML
     private TextField numCantidad;
@@ -51,6 +55,15 @@ public class Form4Controller implements Initializable {
     @FXML
     private Label nameUser;
     
+     @FXML
+    private Spinner<Integer> SpinnerHour;
+
+    @FXML
+    private Spinner<Integer> SpinnerMinute;
+    
+    int currentValue;
+    int currentValue2;
+    
     @FXML
     private Pane Pane2;
     private String pastillas = "Pastilla(s)";
@@ -59,12 +72,25 @@ public class Form4Controller implements Initializable {
     private String solucion = "Frasco(s)";
     private String inyecciones = "Inyeccion(es)";
 
-    private String[] hours = {"1:00","2:00","3:00","4:00","5:00","6:00","7:00","8:00","9:00","10:00","11:00",
-        "12:00","13:00","14:00","15:00","16:00","17:00","18:00","19:00","20:00","21:00","22:00","23:00","24:00"};
     
-    
+   
     @Override
     public void initialize(URL url, ResourceBundle rb) {
+        
+        SpinnerValueFactory<Integer> valueFactory = new SpinnerValueFactory.IntegerSpinnerValueFactory(1,24) ;
+         SpinnerValueFactory<Integer> valueFactory2 = new SpinnerValueFactory.IntegerSpinnerValueFactory(1,60) ;
+        
+        valueFactory.setValue(24);
+        valueFactory2.setValue(30);
+        
+        SpinnerHour.setValueFactory(valueFactory);
+        SpinnerMinute.setValueFactory(valueFactory2);
+       
+        SpinnerHour.getStyleClass().add(Spinner.STYLE_CLASS_SPLIT_ARROWS_VERTICAL);
+        SpinnerMinute.getStyleClass().add(Spinner.STYLE_CLASS_SPLIT_ARROWS_VERTICAL);
+        
+        
+
 
         method.setText(method.getText() + Form3Controller.getMyVariable());
         
@@ -82,7 +108,47 @@ public class Form4Controller implements Initializable {
          nameCount.setText(pastillas);
         }
         
-        myChoiseBox.getItems().addAll(hours);
+       
+        
+        NextFormButton.setOnAction((event) -> {
+            
+        currentValue = SpinnerHour.getValue();
+        currentValue2 = SpinnerMinute.getValue();
+        
+        String h = Integer.toString(currentValue);
+        String minute = Integer.toString(currentValue2);
+        String hour = h+":"+minute;
+            
+            
+      
+        String numPills = numCantidad.getText();
+        String idUser = IdUser.getText();
+        String nameMedi = this.nameMedi.getText();
+        String imgSource = this.imgSource.getText();
+        String numCan = this.numCan.getText();
+        String MedidCant = selected.getText();
+        String FormaMedi = nameCount.getText();
+        String name = nameUser.getText();
+       
+        Pane2.getScene().getWindow().hide();
+        
+       FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Form5.fxml"));
+                Parent root = null;           
+            try {
+                root = (Parent) loader.load();
+            } catch (IOException ex) {
+                Logger.getLogger(Form4Controller.class.getName()).log(Level.SEVERE, null, ex);
+            }
+                Form5Controller secController = loader.getController();
+                secController.onGetData(idUser,nameMedi,imgSource,numCan,MedidCant,numPills,hour,FormaMedi,name);     
+                Stage stage = new Stage();
+                stage.setScene(new Scene(root));
+                stage.initModality(Modality.APPLICATION_MODAL); 
+                stage.setTitle("MediAlarm");
+                stage.getIcons().add(new Image("/image/clockW.png"));
+                stage.show();
+            
+        });
         
     }    
 
@@ -96,34 +162,5 @@ public class Form4Controller implements Initializable {
         nameUser.setText(name);
         
     }
-    
-       @FXML
-    void OnNextForm(ActionEvent event) throws IOException {
-        String hour = myChoiseBox.getValue();
-        String numPills = numCantidad.getText();
-        String idUser = IdUser.getText();
-        String nameMedi = this.nameMedi.getText();
-        String imgSource = this.imgSource.getText();
-        String numCan = this.numCan.getText();
-        String MedidCant = selected.getText();
-        String FormaMedi = nameCount.getText();
-        String name = nameUser.getText();
-       
-        Pane2.getScene().getWindow().hide();
-        
-       FXMLLoader loader = new FXMLLoader(getClass().getResource("/view/Form5.fxml"));
-                Parent root = (Parent) loader.load();           
-                Form5Controller secController = loader.getController();
-                secController.onGetData(idUser,nameMedi,imgSource,numCan,MedidCant,numPills,hour,FormaMedi,name);     
-                Stage stage = new Stage();
-                stage.setScene(new Scene(root));
-                stage.initModality(Modality.APPLICATION_MODAL); 
-                stage.setTitle("MediAlarm");
-                stage.getIcons().add(new Image("/image/clockW.png"));
-                stage.show();
-         
-          
-
-    }
-    
+   
 }

@@ -4,7 +4,42 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6485a65-6422-48ed-96db-0d5a9e2ac734" name="Changes" comment="Alarma de notificaciones completado :&#10;Falta realizar:&#10;-Terminar el hilo cuando el usuario termine la sesion&#10;-Revisar la alarma en el caso que no haya ningun medicamento registrado." />
+    <list default="true" id="a6485a65-6422-48ed-96db-0d5a9e2ac734" name="Changes" comment="Proyecto mediAlarm en javafx terminado .&#10;-Realizar comprobaciones en correo electronico y seguridad de los datos en el medicamento.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" afterPath="$PROJECT_DIR$/build/built-jar.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/Form1Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/Form1Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/Form4Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/Form4Controller.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/MainViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MainViewController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/MedicinesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MedicinesController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/MenuController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MenuController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MenuController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/MusicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/MusicController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/NewsController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/RegisterController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/model/ConsultUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/model/ConsultUser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/model/User_Seguity.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/model/User_Seguity.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/stylesheet/form4.css" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/stylesheet/form4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/view/Form4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/view/Form4.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/view/Item2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/view/Item2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/view/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/view/MainView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/classes/view/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/view/Register.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Form1Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Form1Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Form4Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Form4Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/Item2Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/Item2Controller.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MainViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MainViewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/MusicController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/MusicController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/NewsController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/NewsController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/ConsultUser.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/ConsultUser.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/model/User_Seguity.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/model/User_Seguity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/music/Bajo el agua.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/stylesheet/form4.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/stylesheet/form4.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Form4.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Form4.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Item2.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Item2.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/MainView.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/view/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/view/Register.fxml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -123,7 +158,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653277960308</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Proyecto mediAlarm en javafx terminado .&#10;-Realizar comprobaciones en correo electronico y seguridad de los datos en el medicamento.">
+      <created>1653581159793</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1653581159793</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -146,6 +188,7 @@
     <MESSAGE value="Modulo agregar medicamento completado :&#10;Falta realizar el refresh del calendario.&#10;Se añadio estilos css a los formularios 1,2,3,4 y 5&quot;." />
     <MESSAGE value="Modulo musica completado :&#10;Falta realizar mejoras en el diseño de los botones ." />
     <MESSAGE value="Alarma de notificaciones completado :&#10;Falta realizar:&#10;-Terminar el hilo cuando el usuario termine la sesion&#10;-Revisar la alarma en el caso que no haya ningun medicamento registrado." />
-    <option name="LAST_COMMIT_MESSAGE" value="Alarma de notificaciones completado :&#10;Falta realizar:&#10;-Terminar el hilo cuando el usuario termine la sesion&#10;-Revisar la alarma en el caso que no haya ningun medicamento registrado." />
+    <MESSAGE value="Proyecto mediAlarm en javafx terminado .&#10;-Realizar comprobaciones en correo electronico y seguridad de los datos en el medicamento." />
+    <option name="LAST_COMMIT_MESSAGE" value="Proyecto mediAlarm en javafx terminado .&#10;-Realizar comprobaciones en correo electronico y seguridad de los datos en el medicamento." />
   </component>
 </project>

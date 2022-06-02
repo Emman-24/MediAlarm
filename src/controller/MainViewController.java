@@ -5,6 +5,7 @@ import cripto.hash;
 import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
+import javafx.application.Platform;
 import javafx.event.ActionEvent;
 import javafx.fxml.Initializable;
 import javafx.fxml.FXML;
@@ -72,6 +73,8 @@ public class MainViewController implements Initializable  {
             
             Alert alert = new Alert(Alert.AlertType.CONFIRMATION);
             alert.setHeaderText(null);
+            Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+            stage.getIcons().add(new Image(this.getClass().getResource("/image/clockW.png").toString()));
             alert.setTitle(tittle);
             alert.setContentText(message);
             alert.showAndWait();
@@ -84,12 +87,16 @@ public class MainViewController implements Initializable  {
                 Parent root = (Parent) loader.load();           
                 MenuController secController = loader.getController();
                 secController.onGetData(fullname, validate);     
-                Stage stage = new Stage();
                 stage.setScene(new Scene(root));
                 stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.setResizable(false);
                 stage.setTitle("MediAlarm");
                 stage.show();
+                
+                 stage.setOnCloseRequest((e) -> {
+                    Platform.exit();
+                    System.exit(0);
+                });
          
          
         

@@ -339,7 +339,7 @@ public class MusicController implements Initializable {
         mediaPlayer = new MediaPlayer(media);
         
        String oracion = songs.get(songNumber).getName();
-        String palabra = ".mp3";
+       String palabra = ".mp3";
         
         songName.setText(palabraEliminar(oracion, palabra));
         List<Music> art = ls.searchArtist(palabraEliminar(oracion, palabra));
@@ -443,6 +443,11 @@ public class MusicController implements Initializable {
                       stage.setTitle("MediAlarm");
                       stage.getIcons().add(new Image("/image/clockW.png"));
                       stage.show();
+                      
+                       stage.setOnCloseRequest((e) -> {
+                    Platform.exit();
+                    System.exit(0);
+                });
                 
                 
              });

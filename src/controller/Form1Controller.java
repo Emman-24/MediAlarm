@@ -10,9 +10,11 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.Alert;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.scene.layout.VBox;
 import javafx.stage.Modality;
 import javafx.stage.Stage;
@@ -45,9 +47,22 @@ public class Form1Controller implements Initializable {
     
       @FXML
     void OnNextForm(ActionEvent event) throws IOException {
+        
+        String name = NameUser.getText();
+          
         String id = IdUser.getText();
         String Medicine = MedicineName.getText();
-        String name = NameUser.getText();
+       
+        if(Medicine == ""){
+            Alert alert = new Alert(Alert.AlertType.INFORMATION);
+            Stage stage = (Stage) alert.getDialogPane().getScene().getWindow();
+            stage.getIcons().add(new Image(this.getClass().getResource("/image/clockW.png").toString()));
+            alert.setTitle("MediAlarm");
+            alert.setHeaderText("Debes ingresar un medicamento , "+name);
+            alert.showAndWait();                       
+                                   
+         
+        }else{
         
         Vbox.getScene().getWindow().hide();           
                 
@@ -56,13 +71,12 @@ public class Form1Controller implements Initializable {
                 Form2Controller secController = loader.getController();
                 secController.onGetData(id,Medicine,name);     
                 Stage stage = new Stage();
-                stage.initModality(Modality.APPLICATION_MODAL);
                 stage.setScene(new Scene(root));
                 stage.setTitle("MediAlarm");
                 stage.getIcons().add(new Image("/image/clockW.png"));
                 stage.show();
        
-
+        }
     }
     
       @FXML

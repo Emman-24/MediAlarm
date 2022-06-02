@@ -51,7 +51,7 @@
             </Label>
             <ImageView fitHeight="392.2" fitWidth="419.34" layoutX="430.0" layoutY="83.9" pickOnBounds="true" preserveRatio="true">
                <image>
-                  <Image url="@../image/clock.png" />
+                  <Image url="@../image/ClockMedi.gif" />
                </image>
             </ImageView>
             <Line endX="48.0" layoutX="133.0" layoutY="411.0" startX="-25.0" stroke="#303445" />
