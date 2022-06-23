@@ -4,41 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="a6485a65-6422-48ed-96db-0d5a9e2ac734" name="Changes" comment="Proyecto mediAlarm en javafx terminado.">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/built-jar.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/controller/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/private/private.xml" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/private/private.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/nbproject/project.properties" beforeDir="false" afterPath="$PROJECT_DIR$/nbproject/project.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/controller/CalendarController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/controller/CalendarController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/controller/CodePasswordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/controller/CodePasswordController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/controller/MainViewController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/controller/MainViewController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/controller/MedicinesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/controller/MedicinesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/controller/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/controller/MenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/controller/MusicController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/controller/MusicController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/controller/NewPasswordController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/controller/NewPasswordController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/controller/NewsController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/controller/NewsController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/controller/PasswordRecoveryController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/controller/PasswordRecoveryController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/controller/RegisterController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/controller/RegisterController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/medialarm/MediAlarm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/medialarm/MediAlarm.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/model/ConsultUser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/model/ConsultUser.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/model/Medi.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/model/Medi.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/model/MysqlConnect.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/model/MysqlConnect.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/model/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/model/User.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/model/User_Seguity.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/model/User_Seguity.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/stylesheet/calendar.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/stylesheet/calendar.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/stylesheet/menu.css" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/stylesheet/menu.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/view/Calendar.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/view/Calendar.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/view/MainView.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/view/MainView.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/view/Medicines.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/view/Medicines.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/view/Menu.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/view/Menu.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/view/Music.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/view/Music.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/view/News.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/view/News.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/view/PasswordRecovery.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/view/PasswordRecovery.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/MediAlarm/view/Register.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/MediAlarm/view/Register.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/controller/RegisterController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/controller/RegisterController.java" afterDir="false" />
-    </list>
+    <list default="true" id="a6485a65-6422-48ed-96db-0d5a9e2ac734" name="Changes" comment="Proyecto mediAlarm en javafx terminado." />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +33,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\emman\OneDrive\Documentos\NetBeansProjects\MediAlarm\src\DataBase" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="MediAlarm" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="medialarm.MediAlarm" />
@@ -171,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1654140343539</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Proyecto mediAlarm en javafx terminado.">
+      <created>1656026771994</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1656026771994</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
