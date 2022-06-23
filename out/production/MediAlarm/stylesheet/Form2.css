@@ -1,0 +1,17 @@
+.list-cell{
+    
+    -fx-background-color: #2F2B42;
+    -fx-text-fill: white;
+    -fx-font-family: "Open Sans";
+    -fx-font-size: 15px;
+     -fx-padding: 10px;
+    
+    
+}
+.list-cell:filled:hover { 
+    -fx-background-color:#272338; 
+    
+}
+.list-cell:filled:selected {
+     -fx-background-color:#272338; 
+}

@@ -1,0 +1,7 @@
+.spinner .increment-arrow-button .increment-arrow {
+    -fx-background-color: white;
+}
+
+.spinner .decrement-arrow-button .decrement-arrow {
+    -fx-background-color: white;
+}

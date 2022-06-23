@@ -98,7 +98,6 @@ public class RegisterController implements Initializable {
                                     
                                     if(myCheckBox.isSelected()){    
                                             
-                                
                            
                                     String passwordEncode = hash.encryptThisString(pass);
 
